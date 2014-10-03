@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-cn" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+	layout:decorator="layout">
+<head>
+	<title>用户列表</title>
+</head>
+<body>
+	<div layout:fragment="content" class="container">
+		<button type="button" class="btn btn-default" onclick="history.back()">返回</button>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>标识</th>
+					<th>编号</th>
+					<th>访问次数</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="user : ${users}">
+					<td th:text="${user.id}">1</td>
+					<td th:text="${user.number}">65c4a653-a62a-4bd4-990f-98da4d81a83e</td>
+					<td th:text="${user.visitCount}">0</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="zh-cn" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+	layout:decorator="layout">
+<head>
+	<title>主页</title>
+</head>
+<body>
+	<div layout:fragment="content" class="container">
+		<p th:if="${user}" th:text="'Hello, ' + ${user.number} + '!'" />
+		<a href="/user/list" class="btn btn-primary">用户列表</a>
+	</div>
+</body>
+</html>

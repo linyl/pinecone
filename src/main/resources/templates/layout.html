@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-cn" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+<head>
+	<title>layout</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="/webjars/bootstrap/3.2.0/css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="/webjars/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="/webjars/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script type="text/javascript" src="/webjars/respond/1.4.2/dest/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div layout:fragment="content">
+		Fake content
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script type="text/javascript" src="/webjars/jquery/2.1.1/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script type="text/javascript" src="/webjars/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>
