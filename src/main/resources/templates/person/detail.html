@@ -3,13 +3,11 @@
 	xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
 	layout:decorator="layout">
 <head>
-	<title>松塔制作</title>
+	<title>人物选择</title>
 </head>
 <body>
 	<div layout:fragment="content">
-		<img src="/img/p2/p21.jpg" style="position: absolute; z-index: 0" />
-	
-		<img src="/img/p2/1.png" style="position: absolute; z-index: 1; left: 300px; top: 770px" />
+		<img th:src="${imgUrl}" src="/img/person/1b.jpg" style="cursor: pointer" title="点击返回" onclick="history.back()" />
 	</div>
 </body>
 </html>

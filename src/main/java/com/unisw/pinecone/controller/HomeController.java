@@ -27,7 +27,8 @@ public class HomeController
     VisitLogRepository visitLogRepository;
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public ModelAndView index(@RequestParam(value = "number", required = false) String number, HttpServletRequest request)
+    public ModelAndView index(@RequestParam(value = "number", required = false) String number,
+            HttpServletRequest request)
     {
         User user = null;
 
@@ -57,5 +58,11 @@ public class HomeController
     public String production()
     {
         return "home/production";
+    }
+
+    @RequestMapping(value = "/share", method = RequestMethod.GET)
+    public String share()
+    {
+        return "home/share";
     }
 }
