@@ -29,6 +29,8 @@ public class UserController
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String list(@RequestParam(value = "name", required = false, defaultValue = "World") String name, Model model)
     {
+        //initUsers();
+        
         Iterable<User> users = userRepository.findAll();
         model.addAttribute("users", users);
 

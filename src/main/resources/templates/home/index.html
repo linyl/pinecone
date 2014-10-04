@@ -4,11 +4,19 @@
 	layout:decorator="layout">
 <head>
 	<title>主页</title>
+	<script type="text/javascript" src="/js/index.js"></script>
 </head>
 <body>
-	<div layout:fragment="content" class="container">
-		<p th:if="${user}" th:text="'Hello, ' + ${user.number} + '!'" />
-		<a href="/user/list" class="btn btn-primary">用户列表</a>
+	<div layout:fragment="content">
+		<img id="background" src="/img/p1/p1.jpg" style="position: absolute; z-index: 0" />
+	
+		<img id="pinecone" src="/img/p1/pinecone.png" style="position: absolute; z-index: 1; left: 175px; top: 120px" />
+	
+		<a href="javascript: squirrelUp()">
+			<img id="squirrel" src="/img/p1/squirrel.png" style="position: absolute; z-index: 1; left: 300px; top: 455px" />
+		</a>
+
+		<img id="button" src="/img/p1/button.png" style="position: absolute; z-index: 1; left: 72px; top: 718px" />
 	</div>
 </body>
 </html>

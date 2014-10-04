@@ -15,9 +15,9 @@ spring:
   datasource:
     driverClassName: org.h2.Driver
     url: jdbc:h2:tcp://wangrui/~/pinecone
-    username: admin
-    password: admin
-    
+    username: pinecone
+    password: pinecone
+
   jpa:
     show-sql: true
     hibernate:
